@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 254);
+    color: black;
+    font-family: sans-serif;
+}
+
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(250, 250, 250);
+    color: black;
+    height: 90px;
+    padding: 10px 20px;
+}
+
+#Logo
+{
+    height: 65px;
+    
+}
+
+#SearchBar
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+#SearchBar input
+{
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background: transparent;
+}
+
+#SearchBar img
+{
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+
+nav ul
+{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+    font-size: 20px;
+    /* border: 2px solid red; */
+}
+
+nav ul li
+{
+    transition: 0.4s;
+}
+
+nav ul li:hover
+{
+    
+    padding: 8px 17px;
+    background-color: #007143;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+#Store
+{
+    padding: 8px 17px;
+    background-color: #007143;
+    color: white;
+    border-radius: 30px;
+}
+
+
+main{
+    height: calc(100vh - 90px);
+    /* border: 2px solid red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Plane
+{
+
+    height: 97%;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 6px 10px lightgray;
+    border-radius: 25px;
+
+    display: flex;
+    overflow: hidden;
+
+}
+
+
+#Content
+{
+    height: 100%;
+    width: 60%;
+    /* background-color: teal; */
+}
+
+
+#TextData
+{
+    /* border: 2px solid red; */
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+#TextData h2
+{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#TextData h1
+{
+    font-size: 70px;
+    margin-bottom: 10px;
+    
+}
+
+
+#TextData h1 span
+{
+    color: #007143;
+}
+
+
+#Btns
+{
+    position: relative;
+    top: 50px;
+    left: 10px;
+
+    display: flex;
+    column-gap: 15px;
+}
+
+
+#Btn1
+{
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: #007143;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+#Btn1:hover
+{
+    cursor: pointer;
+    background-color: #005231;
+}
+
+
+#Btn1:active
+{
+    transform: scale(0.99);
+}
+
+
+#Btn2
+{
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+}
+
+
+
+#Banner
+{
+    height: 100%;
+    width: 40%;
+    /* background-color: white; */
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+
+#Banner img
+{
+    height: 90%;
+    object-fit: contain;
+    object-position: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+#Banner img:hover
+{
+
+    transform: scale(1.1) rotate(10deg);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) 
+{
+    nav {
+        height: fit-content;
+        row-gap: 25px;
+        flex-direction: column;
+    }   
+
+    #SearchBar{
+        width: 60%;
+    }
+
+    main
+    {
+        min-height:100vh;
+    }
+
+    #Plane
+    {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        flex-direction: column;
+    }
+
+    #Banner
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #Content
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 368px)
+{
+    nav ul
+    {
+        flex-direction: column;
+        row-gap: 20px;
+    }   
+
+    #SearchBar
+    {
+        width: 80%;
+    }
+}
